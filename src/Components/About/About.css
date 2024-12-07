@@ -1,0 +1,148 @@
+/* General Styles */
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 180px;
+    margin: 2px 170px;
+    padding-top: 100px;
+}
+
+/* About-title */
+ .about-title{
+    position: relative;
+ }
+
+ /* About-title h1 */
+.about-title h1{
+    padding: 0px 30px;
+    font-size: 40px;
+    font-weight: 600px;
+    display: flex;
+    justify-content: center; 
+}
+
+/* About-left img */
+.about-left img{
+    width: 170px;
+    margin-top: -180px;
+}
+
+/* About-right */
+.about-right{
+    font-size: 20px;
+    padding-left: 190px;
+    margin-top: -180px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* About-para */
+.about-para{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    font-size: 18px;
+    font-weight: 600px;
+}
+
+/* About-skill p span */
+.about-skill p span{
+    color: rgb(146, 146, 141);
+}
+
+/* About-skills */
+.about-skills{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* About-skill */
+.about-skill{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    transition: 0.3s;
+}
+
+/* About-skill p */
+.about-skill p{
+    min-width: 150px;
+    font-size: 20px;
+    font-weight: 500px;
+}
+
+/* About-skill hr */
+.about-skill hr {
+    outline: none;
+    border: none;
+    width: 50%;
+    height: 5px;
+    border-radius: 50px;
+    background: linear-gradient(156deg, rgb(146, 146, 141) 0.36%, rgb(185, 170, 152) 102.06%);
+}
+
+/* About-skill hover */
+.about-skill:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 650px) {
+    .about {
+        gap: 50px; 
+        margin: 20px; 
+        align-items: center; 
+        margin-top: 70px;
+    }
+
+    .about-title h1 {
+        font-size: 24px; 
+        text-align: center; 
+        margin-bottom: -25px; 
+    }
+
+    .about-sections {
+        flex-direction: column; 
+        align-items: center;
+        gap: 20px; 
+    }
+
+    .about-left img {
+        display: none;
+        width: 120px; 
+        margin: 0 auto; 
+    }
+
+    .about-right {
+        font-size: 16px; 
+        padding-left: 0; 
+        margin: 0; 
+        text-align: center; 
+    }
+
+    .about-para {
+        font-size: 16px; 
+        line-height: 1.5; 
+        text-align: left;
+    }
+
+    .about-skills {
+        width: 100%; 
+        text-align: left; 
+        gap: 10px; 
+    }
+
+    .about-skill p {
+        font-size: 19px; 
+    }
+
+    .about-skill hr {
+        width: 60%; 
+        height: 4px; 
+    }
+}

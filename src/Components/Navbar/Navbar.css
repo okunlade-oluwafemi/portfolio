@@ -1,0 +1,119 @@
+/* General Styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    right: 0;
+    background-color: #0d0d24; 
+    z-index: 1000; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+/* Logo */
+.logo {
+    width: 50px;
+}
+
+/* Nav-menu */
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+    margin-left: 130px;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+
+/* Nav-connect */
+.nav-connect {
+    padding: 15px 35px;
+    border-radius: 50px;
+    border: 2px solid #FFF;
+    background: #0d0d24;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+/*Nav-connect hover */
+.nav-connect:hover {
+    transform: scale(1.05);
+    color: #B415FF; 
+    background: #1d1d3b; 
+}
+
+/* Anchor-link */
+.anchor-link {
+    text-decoration: none;
+    color: white;
+}
+
+/* Menu-toggle */
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    width: 40px;
+    background-color: #FFF;
+    border-radius: 150px;
+}
+
+/* Menu-toggle hover */
+.menu-toggle:hover {
+    background: white; 
+    transform: scale(1.05); 
+}
+
+/* Mobile Menu Styles */
+.nav-menu.nav-menu-open {
+    display: flex;
+    flex-direction: column;
+    position: fixed; 
+    top: 70px; 
+    right: 20px;
+    background-color: #0d0d24;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000; 
+}
+
+.nav-menu.nav-menu-open li {
+    margin-bottom: 10px; 
+}
+
+.nav-menu.nav-menu-open li:last-child {
+    margin-bottom: 0;
+}
+
+.menu-toggle {
+    position: fixed; 
+    top: 20px;
+    right: 20px;
+    z-index: 1100; 
+    background-color: #0d0d24;
+    padding: 5px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .nav-menu {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+        background-color: #FFF;
+        border-radius: 150px;
+        cursor: pointer;
+        width: 40px;
+    }
+
+    .nav-connect {
+        display: none;
+    }
+}

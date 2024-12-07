@@ -1,0 +1,124 @@
+/* General Styles */
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding-top: 100px;
+}
+
+
+/* Hero img */
+.hero img{
+    width: 100px;
+    border-radius: 150px;
+    margin-top: 70px;
+}
+
+
+/* Hero h1 */
+.hero h1{
+    text-align: center;
+    width: 40%;
+    font-size: 2.5rem; 
+    font-weight: 40px;
+    color: #87ceeb;
+}
+
+/* Hero h2 span */
+.hero h2 span{
+    background: linear-gradient(270deg, #d3d3c4 20%, #5461d1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.2rem;
+}
+
+/* Hero-action */
+.hero-action{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-size: 24px;
+    font-weight: 40px;
+    margin-bottom: 50px;
+}
+
+/* Hero-action a */
+.hero-action a {
+    text-decoration: none; 
+    color: white; 
+    display: inline-block; 
+  }
+
+/* Hero-github Hero-resume */
+.hero-github,
+.hero-resume{
+    padding: 15px 35px;
+    border-radius: 50px;
+    border: 2px solid #FFF;
+    background: #0d0d24;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 20px;
+}
+
+/* Hero-github Hero-resume hover */
+.hero-github:hover, 
+.hero-resume:hover {
+  color: #B415FF; 
+  background: #1d1d3b; 
+  transform: scale(1.05); 
+}
+
+/* Responsive Styles */
+@media screen and (max-width:768px) {
+    .hero{
+        gap: 25px;
+    }
+    .hero img {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        width: 80px; 
+    }
+    .hero p {
+        font-size: 16px;
+        line-height: 1.4;
+        margin: 5px 0;
+    }
+    .hero h2 span {
+        font-size: 20px; 
+        line-height: 1.2;
+        display: inline-block; 
+    }
+    .hero h1 {
+        font-size: 24px; 
+        width: 100%; 
+        text-align: center; 
+        margin: 10px 0;
+    }
+    .hero p {
+        font-size: 16px;
+        line-height: 1.4;
+        margin: 5px 0;
+    }
+    .hero-action {
+        flex-direction: column; 
+        gap: 10px; 
+        margin-bottom: 20px;
+    }
+
+    .hero-action a {
+        width: 100%; 
+        text-align: center; 
+    }
+
+    .hero-github, 
+    .hero-resume {
+        font-size: 16px; 
+        padding: 12px 25px; 
+        border-radius: 30px;  
+    }
+}
+
